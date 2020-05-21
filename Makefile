@@ -1,6 +1,2 @@
-default:
-	obj-m += driver/openvfd.o
-	$(MAKE) modules
+obj-m += driver/
 
-OpenVFDService: OpenVFDService.c
-	$(CC) $(CFLAGS) -Wall -w -o $@ $^ -lm -lpthread
